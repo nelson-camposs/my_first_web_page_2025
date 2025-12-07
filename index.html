@@ -1,110 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Site Mutari">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta charset = "utf-8" />
+    <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
     <title>Fundamentals of Computer Engineering</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
         .container {
-            max-width: 1200px;
             width: 100%;
+            max-width: 1000px;
             margin: 0 auto;
         }
-
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
-            padding: 1em 0;
+            padding: 10px 0;
             text-align: center;
         }
-
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .header-title {
-            font-size: 1.5em;
+            font-size: 1.5rem;
             padding-left: 20px;
         }
-
-        nav ul {
+        nav {
             display: flex;
             gap: 20px;
         }
-
-        nav li {
-            list-style: none;
-        }
-
         nav a {
-            text-decoration: none;
             color: white;
+            text-decoration: none;
+            font-size: 1rem;
             padding: 5px 10px;
+            border-radius: 5px;
             transition: background-color 0.3s;
         }
-
         nav a:hover {
             background-color: #555;
         }
-
         nav a.active {
             background-color: red;
             color: white;
         }
-
         .footer-section {
             background-color: #333;
-            width: 100%;
-            padding: 20px 0;
             color: white;
             text-align: center;
+            max-width: 1000px;
+            width: 100%;   
         }
-
         .footer-section a {
             color: red;
             text-decoration: none;
         }
-
-        .footer-section p {
-            font-size: 0.8em;
-            margin: 0;
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .menu {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .menu-content {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+        }
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu-item p {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+        .menu-icon {
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container header-content">
-            <div class="header-title">Webpage Header</div>
+    <header class="container">
+        <div class="header-content">
+        <div class="header-title">Webpage Header</div>
             <nav>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
             </nav>
         </div>
     </header>
-
-    <div class="container">
+    <main class="container">
+        <div class="content">
+            <h1>Welcome to the Webpage</h1>
+            <p>This is the central area of the webpage where you can include your content.</p>
         </div>
-
-    <footer class="footer-section">
-        <p>&copy; 2024 All rights reserved. Design by <a href="#">Walsh Martínez</a></p>
+        <div class = "menu">
+            <div class="menu-content">
+                <div class="menu-item">
+                    <img src="./images/location-white.png" alt="Location Icon" class="menu-icon">
+                    <p>Location</p>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/telephone-white.png" alt="Phone Icon" class="menu-icon">
+                    <p>+02 1234567890</p>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/envelope-white.png" alt="Email Icon" class="menu-icon">
+                    <p>demo@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer_section">
+            <p>&copy; 2025 All rights reserved. Design by<a href="#">Nelson Campos</a></p>
     </footer>
 </body>
 </html>
